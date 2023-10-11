@@ -19,7 +19,6 @@ pipeline {
   					echo "Jenkins is not running"
 				fi
                 '
-                sh 'lscpu'
             }
         }
     }
