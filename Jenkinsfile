@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Erica Stage') {
             steps {
-               sh' #!/bin/bash
+               sh' #!/bin/bash '
 				# Check operating system statistics
 				echo "Operating system statistics:"
 				echo "CPU usage: $(top -bn1 | grep load | awk '{printf "%.2f%%\n", $(NF-2)}')"
@@ -16,7 +16,7 @@ pipeline {
   					echo "Jenkins is running"
 				else
   					echo "Jenkins is not running"
-				fi'
+				fi
             }
         }
     }
